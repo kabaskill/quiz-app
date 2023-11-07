@@ -56,6 +56,10 @@ h1 {
   margin-bottom: 0;
 }
 
+.question-box:last-of-type {
+  margin-bottom: 10rem;
+}
+
 .answer {
   font-style: italic;
   margin-bottom: 20px;
@@ -123,7 +127,7 @@ section .profile-stats {
 }
 
 footer {
-  position: sticky;
+  position: fixed;
   width: 100%;
   height: 10vh;
   bottom: 0px;
