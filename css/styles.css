@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+header,
+h1 {
+  background-color: aliceblue;
+  margin: 0;
+}
+
+.question {
+  cursor: pointer;
+  display: block;
+  background: lightgrey;
+  padding: 1rem;
+}
+
+.question + input {
+  display: none;
+}
+
+.question + input + div {
+  display: none;
+}
+
+.question + input:checked + div {
+  display: block;
+}
+
+.question-box {
+  width: 80vw;
+  height: 30vh;
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(192, 208, 225);
+}
+
+.bookmark-emoji {
+  position: relative;
+  font-size: 20px;
+  left: 0px;
+  top: 0px;
+}
+
+footer {
+  position: sticky;
+  width: 100%;
+  height: 5vh;
+  bottom: 0px;
+  margin: 0;
+  background-color: rgb(203, 225, 225);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-inline: 20px;
+}
+
+footer nav li {
+  list-style: none;
+}
