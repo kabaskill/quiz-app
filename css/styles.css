@@ -147,7 +147,7 @@ footer nav {
 
 footer nav ul {
   width: 80%;
-  max-width: 60vw;
+  max-width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
