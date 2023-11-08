@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,42 +15,24 @@
     <main>
       <section class="question-box">
         <p>Who is the best super hero?</p>
-        <label class="question" for="q1">Show Answer</label>
-        <input aria-label="show-answer" id="q1" type="checkbox" />
-        <div class="answer">Batman</div>
-        <p class="bookmark-emoji">&#128640;</p>
-      </section>
+        <button
+          aria-label="answer-button1"
+          type="button"
+          class="button"
+          data-js="answer-button1"
+        >
+          Show/Hide Answer
+        </button>
+        <p data-js="answer-box1" class="answer hidden">Batman</p>
 
-      <section class="question-box">
-        <p>Who is the best chef?</p>
-        <label class="question" for="q2">Show Answer</label>
-        <input aria-label="show-answer" id="q2" type="checkbox" />
-        <div class="answer">Gordon Ramsay</div>
-        <p class="bookmark-emoji">&#128640;</p>
-      </section>
-
-      <section class="question-box">
-        <p>Who is the best music band?</p>
-        <label class="question" for="q3">Show Answer</label>
-        <input aria-label="show-answer" id="q3" type="checkbox" />
-        <div class="answer">Metallica</div>
-        <p class="bookmark-emoji">&#128640;</p>
-      </section>
-
-      <section class="question-box">
-        <p>Who is the best actor?</p>
-        <label class="question" for="q4">Show Answer</label>
-        <input aria-label="show-answer" id="q4" type="checkbox" />
-        <div class="answer">Robert De Niro</div>
-        <p class="bookmark-emoji">&#128640;</p>
-      </section>
-
-      <section class="question-box">
-        <p>Who is the best comedian?</p>
-        <label class="question" for="q5">Show Answer</label>
-        <input aria-label="show-answer" id="q5" type="checkbox" />
-        <div class="answer">George Carlin</div>
-        <p class="bookmark-emoji">&#128640;</p>
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button"
+        >
+          <img src="/images/bookmark-regular.svg" alt="bookmark-symbol" />
+        </button>
       </section>
     </main>
 

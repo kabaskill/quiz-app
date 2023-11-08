@@ -16,23 +16,8 @@ h1 {
   padding: 0.4rem;
 }
 
-.question {
-  cursor: pointer;
-  display: block;
-  background: lightgrey;
-  padding: 1rem;
-}
-
-.question + input {
+.hidden {
   display: none;
-}
-
-.question + input + div {
-  display: none;
-}
-
-.question + input:checked + div {
-  display: block;
 }
 
 .question-box {
