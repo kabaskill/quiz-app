@@ -1,0 +1,58 @@
+@import "global.css";
+@import "/components/header.css";
+@import "/components/button.css";
+@import "/components/card.css";
+@import "/components/navigation.css";
+
+.profile-page {
+  display: block;
+}
+
+.profile {
+  max-width: 80vw;
+  width: 30rem;
+  height: 12rem;
+  margin: 30px auto 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(192, 208, 225);
+}
+
+.about-me {
+  max-width: 80vw;
+  width: 30rem;
+  height: fit-content;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-inline: 1rem;
+}
+
+.profile img {
+  width: 10vh;
+  height: auto;
+}
+
+section .profile-stats {
+  max-width: 50vw;
+  width: 16rem;
+  /* margin: 30px auto; */
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.profile-stats-items {
+  background-color: rgb(236, 252, 253);
+  padding-inline: 1rem;
+  padding-block: 0.6rem;
+}
+
+.settings {
+  margin-bottom: 80px;
+}

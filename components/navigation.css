@@ -1,0 +1,52 @@
+footer {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  bottom: 0px;
+
+  background-color: rgb(181, 199, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-inline: 2rem;
+  padding: 0;
+}
+
+footer nav ul {
+  width: 80%;
+  max-width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.active-page {
+  background-color: rgb(214, 182, 158);
+}
+
+footer nav li {
+  list-style: none;
+}
+
+.icons {
+  width: 2rem;
+  padding: 0.3rem;
+}
+
+.icon1 {
+  width: 2.9rem;
+}
+
+.icon3 {
+  width: 2.6rem;
+}
