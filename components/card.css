@@ -33,8 +33,7 @@
 }
 
 .bookmark-symbol {
-  right: 18px;
-  top: -12px;
-  position: absolute;
-  margin: 0;
+  border: none;
+  cursor: pointer;
+  /* background: url(/images/bookmark-solid.svg) */
 }
