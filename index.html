@@ -13,7 +13,7 @@
     </header>
 
     <main>
-      <section class="question-box">
+      <section class="question-box flex-col">
         <p>Who is the best super hero?</p>
         <button
           aria-label="answer-button1"
@@ -25,23 +25,170 @@
         </button>
         <p data-js="answer-box1" class="answer hidden">Batman</p>
 
+        <div class="tags">
+          <p>
+            <span class="tag">#marvel</span><span class="tag">#comic-book</span
+            ><span class="tag">#dark-knight</span>
+          </p>
+        </div>
+
         <button
           aria-label="bookmark-symbol"
           type="button"
           class="bookmark-symbol"
           data-js="bookmark-button"
         >
-          <img src="/images/bookmark-regular.svg" alt="bookmark-symbol" />
+          <img
+            src="/images/bookmark-regular.svg"
+            alt="bookmark-symbol"
+            height="30"
+          />
+        </button>
+      </section>
+
+      <section class="question-box flex-col">
+        <p>Who is the best chef?</p>
+        <button
+          aria-label="answer-button2"
+          type="button"
+          class="button"
+          data-js="answer-button2"
+        >
+          Show/Hide Answer
+        </button>
+        <p data-js="answer-box2" class="answer hidden">Gordon Ramsay</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#kitchen</span><span class="tag">#its-raw</span
+            ><span class="tag">#british</span>
+          </p>
+        </div>
+
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button"
+        >
+          <img
+            src="/images/bookmark-regular.svg"
+            alt="bookmark-symbol"
+            height="30"
+          />
+        </button>
+      </section>
+
+      <section class="question-box flex-col">
+        <p>Who is the best actor?</p>
+        <button
+          aria-label="answer-button3"
+          type="button"
+          class="button"
+          data-js="answer-button3"
+        >
+          Show/Hide Answer
+        </button>
+        <p data-js="answer-box3" class="answer hidden">Jack Nicholson</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#oscars</span><span class="tag">#shining</span
+            ><span class="tag">#joker</span>
+          </p>
+        </div>
+
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button"
+        >
+          <img
+            src="/images/bookmark-regular.svg"
+            alt="bookmark-symbol"
+            height="30"
+          />
+        </button>
+      </section>
+
+      <section class="question-box flex-col">
+        <p>Who is the best band?</p>
+        <button
+          aria-label="answer-button4"
+          type="button"
+          class="button"
+          data-js="answer-button4"
+        >
+          Show/Hide Answer
+        </button>
+        <p data-js="answer-box4" class="answer hidden">Metallica</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#marvel</span><span class="tag">#comic-book</span
+            ><span class="tag">#dark-knight</span>
+          </p>
+        </div>
+
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button"
+        >
+          <img
+            src="/images/bookmark-regular.svg"
+            alt="bookmark-symbol"
+            height="30"
+          />
+        </button>
+      </section>
+
+      <section class="question-box flex-col">
+        <p>Who is the best comedian?</p>
+        <button
+          aria-label="answer-button5"
+          type="button"
+          class="button"
+          data-js="answer-button5"
+        >
+          Show/Hide Answer
+        </button>
+        <p data-js="answer-box5" class="answer hidden">George Carlin</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#marvel</span><span class="tag">#comic-book</span
+            ><span class="tag">#dark-knight</span>
+          </p>
+        </div>
+
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button"
+        >
+          <img
+            src="/images/bookmark-regular.svg"
+            alt="bookmark-symbol"
+            height="30"
+          />
         </button>
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <ul>
+    <footer class="flex">
+      <nav class="flex">
+        <ul class="flex-sb">
           <li class="active-page">
             <a href="index.html"
-              ><img class="icons icon1" src="images/house-solid.svg" alt="home"
+              ><img
+                class="icons icon1"
+                src="images/house-solid.svg"
+                alt="home"
+                height="40"
             /></a>
           </li>
           <li>
@@ -50,6 +197,7 @@
                 class="icons icon2"
                 src="images/bookmark-regular.svg"
                 alt="bookmark"
+                height="40"
             /></a>
           </li>
           <li>
@@ -58,6 +206,7 @@
                 class="icons icon3"
                 src="images/user-solid.svg"
                 alt="profile"
+                height="40"
             /></a>
           </li>
         </ul>

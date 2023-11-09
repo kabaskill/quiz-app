@@ -5,9 +5,34 @@
 body {
   margin: 0;
   font-family: monospace;
+
+  background-color: rgb(229, 241, 237);
 }
 
 :root {
   --primary-color: rgb(190, 224, 253);
-  --secondary-color: rgb(192, 208, 225);
+  --secondary-color: rgb(177, 211, 247);
+  --button-color: rgb(219, 220, 220);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }

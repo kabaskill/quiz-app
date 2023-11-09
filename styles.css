@@ -18,7 +18,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: rgb(192, 208, 225);
+  background-color: var(--secondary-color);
 }
 
 .about-me {

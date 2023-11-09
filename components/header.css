@@ -1,7 +1,7 @@
-header,
-h1 {
-  background-color: rgb(190, 224, 253);
+header {
+  background-color: var(--primary-color);
   margin: 0;
   text-align: center;
   padding: 0.4rem;
+  font-size: 1.2rem;
 }
