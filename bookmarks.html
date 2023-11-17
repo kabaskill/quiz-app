@@ -4,61 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Bookmarks</h1>
+      <h1>Quiz App</h1>
     </header>
 
     <main>
-      <section class="question-box">
+      <button type="button" class="button" data-js="dev-button">
+        Show/Hide All Bookmarks
+      </button>
+
+      <section class="question-box flex-col" data-js="bookmark1">
+        <p>Who is the best super hero?</p>
+
+        <p class="answer">Batman</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#marvel</span><span class="tag">#comic-book</span
+            ><span class="tag">#dark-knight</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="question-box flex-col" data-js="bookmark2">
         <p>Who is the best chef?</p>
-        <label class="question" for="q2">Show Answer</label>
-        <input id="q2" type="checkbox" />
-        <div class="answer">Gordon Ramsay</div>
-        <p class="bookmark-emoji">&#128640;</p>
+
+        <p data-js="answer-box2" class="answer">Gordon Ramsay</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#kitchen</span><span class="tag">#its-raw</span
+            ><span class="tag">#british</span>
+          </p>
+        </div>
       </section>
 
-      <section class="question-box">
-        <p>Who is the best music band?</p>
-        <label class="question" for="q3">Show Answer</label>
-        <input id="q3" type="checkbox" />
-        <div class="answer">Metallica</div>
-        <p class="bookmark-emoji">&#128640;</p>
+      <section class="question-box flex-col" data-js="bookmark3">
+        <p>Who is the best actor?</p>
+
+        <p class="answer">Jack Nicholson</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#oscars</span><span class="tag">#shining</span
+            ><span class="tag">#joker</span>
+          </p>
+        </div>
       </section>
 
-      <section class="question-box">
+      <section class="question-box flex-col" data-js="bookmark4">
+        <p>Who is the best band?</p>
+
+        <p class="answer">Metallica</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#marvel</span><span class="tag">#comic-book</span
+            ><span class="tag">#dark-knight</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="question-box flex-col" data-js="bookmark5">
         <p>Who is the best comedian?</p>
-        <label class="question" for="q5">Show Answer</label>
-        <input id="q5" type="checkbox" />
-        <div class="answer">George Carlin</div>
-        <p class="bookmark-emoji">&#128640;</p>
+
+        <p class="answer">George Carlin</p>
+
+        <div class="tags">
+          <p>
+            <span class="tag">#marvel</span><span class="tag">#comic-book</span
+            ><span class="tag">#dark-knight</span>
+          </p>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <ul>
-          <li id="home">
-            <a id="home" href="index.html"
-              ><img class="icons icon1" src="images/house-solid.svg" alt="home"
+    <footer class="flex">
+      <nav class="flex">
+        <ul class="flex-sb">
+          <li>
+            <a href="index.html"
+              ><img
+                class="icons icon1"
+                src="images/house-solid.svg"
+                alt="home"
+                height="40"
             /></a>
           </li>
-          <li id="bookmarks" class="active-page">
-            <a id="bookmarks" href="bookmarks.html"
+          <li class="active-page">
+            <a href="bookmarks.html"
               ><img
                 class="icons icon2"
                 src="images/bookmark-regular.svg"
                 alt="bookmark"
+                height="40"
             /></a>
           </li>
-          <li id="profile">
-            <a id="profile" href="profile.html"
+          <li>
+            <a href="profile.html"
               ><img
                 class="icons icon3"
                 src="images/user-solid.svg"
                 alt="profile"
+                height="40"
             /></a>
           </li>
         </ul>

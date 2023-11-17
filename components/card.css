@@ -1,0 +1,51 @@
+.question-box {
+  max-width: 80vw;
+  max-height: 30vh;
+  width: 30rem;
+  height: 18rem;
+  margin: 30px auto;
+  background-color: var(--secondary-color);
+
+  text-align: center;
+  position: relative;
+  /* gap: 1.3rem; */
+}
+
+.question-box:last-of-type {
+  margin-bottom: 10rem;
+}
+
+.answer {
+  font-weight: bold;
+}
+
+.bookmark-symbol {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  padding: 0;
+  margin: 0;
+}
+.clicked {
+  background-color: blueviolet !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.tags {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.6em;
+}
+
+.tag {
+  background-color: lightgray;
+  margin-inline: 0.75rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
