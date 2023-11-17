@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./js/create-card.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main>
+      <h2>Create your own card</h2>
+      <form data-js="card-form" class="">
+        <fieldset>
+            <div class="form-inputs">
+                <label for="card-question">Question</label>
+                <textarea data-js="question" name="cardQuestion" id="card-question" rows="3" cols="24" maxlength="150" placeholder="Enter your question here" required></textarea>
+                <p data-js="counter-q">150 characters left</p>
+            </div>
+            <div class="form-inputs">
+                <label for="card-answer">Answer</label>
+                <textarea data-js="answer" type="text" name="cardAnswer" id="card-answer" rows="3" cols="24" maxlength="150" placeholder="Enter your answer here" required></textarea>
+                <p data-js="counter-a">150 characters left</p>
+            </div>
+            <div class="form-inputs">
+                <label for="card-tags">Enter your tags</label>
+                <input data-js="tags" type="text" name="cardTags" id="card-tags" maxlength="150" placeholder="#tags" required></input>
+            </div>
+        </fieldset>
+        <button data-js="submit-card" type="submit" class="button">Create Card</button>
+      </form>
+    </main>
+
+    <footer class="flex">
+      <nav class="flex">
+        <ul class="flex-sb">
+          <li >
+            <a href="index.html"
+              ><img class="icons icon1" src="images/house-solid.svg" alt="home" height="40"
+            /></a>
+          </li>
+          <li>
+            <a href="bookmarks.html"
+              ><img
+                class="icons icon2"
+                src="images/bookmark-regular.svg"
+                alt="bookmark"
+                height="40"
+            /></a>
+          </li>
+          <li class="active-page">
+            <a href="create-card.html"
+              ><img class="icons icon4" src="images/plus-sign-1.svg" alt="create-card"
+            /></a>
+          </li>
+          <li>
+            <a href="profile.html"
+              ><img class="icons icon3" src="images/user-solid.svg" alt="profile" height="40"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -36,3 +36,12 @@ body {
   align-items: center;
   padding: 0;
 }
+
+form {
+  max-width: 80vw;
+  margin: auto;
+}
+
+form .button {
+  justify-content: center;
+}
