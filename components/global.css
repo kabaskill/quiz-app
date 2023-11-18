@@ -11,7 +11,9 @@ body {
 
 :root {
   --primary-color: rgb(190, 224, 253);
+  --primary-dark-color: rgb(75, 87, 99);
   --secondary-color: rgb(177, 211, 247);
+  --secondary-dark-color: rgb(73, 84, 95);
   --button-color: rgb(219, 220, 220);
 }
 

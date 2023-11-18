@@ -7,15 +7,19 @@ const counterA = document.querySelector('[data-js="counter-a"]');
 const submitButton = document.querySelector('[data-js="submit-card"]');
 const cardForm = document.querySelector('[data-js="card-form"]');
 
+
 cardForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const newCard = document.createElement("section");
 
+  const cardContainer = document.querySelector(".card-container");
+  console.log(cardContainer);
+  
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
   console.log(data);
 
-  document.body.append(newCard);
+  cardContainer.append(newCard);
 
   newCard.innerHTML = `<section class="question-box flex-col">
         <p>${data.cardQuestion}</p>
@@ -36,7 +40,8 @@ cardForm.addEventListener("submit", (event) => {
             <img src="/images/bookmark-regular.svg" alt="bookmark-symbol" height="30" />
         </button>
         </section>`;
-  const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
+
+  const bookmarkButton = newCard.querySelector('[data-js="bookmark-button"]');
 
   bookmarkButton.addEventListener("click", () => {
     bookmarkButton.classList.toggle("clicked");

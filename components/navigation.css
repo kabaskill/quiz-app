@@ -4,7 +4,7 @@ footer {
   height: 10vh;
   bottom: 0px;
 
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 footer nav {
