@@ -13,12 +13,15 @@
     </header>
 
     <main>
-      <button type="button" class="button" data-js="dev-button">Show/Hide All Bookmarks</button>
-
-      <section class="question-box flex-col" data-js="bookmark1">
+      <section class="question-box flex-col">
         <p>Who is the best super hero?</p>
-
-        <p class="answer">Batman</p>
+        <button
+          aria-label="answer-button1"
+          type="button"
+          class="button"
+          data-js="answer-button1"
+        ></button>
+        <p data-js="answer-box1" class="answer hidden">Batman</p>
 
         <div class="tags">
           <p>
@@ -26,25 +29,26 @@
             ><span class="tag">#dark-knight</span>
           </p>
         </div>
+
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button1"
+        >
+          <img src="/images/bookmark-regular.svg" alt="bookmark-symbol" height="30" />
+        </button>
       </section>
 
-      <section class="question-box flex-col" data-js="bookmark2">
-        <p>Who is the best chef?</p>
-
-        <p data-js="answer-box2" class="answer">Gordon Ramsay</p>
-
-        <div class="tags">
-          <p>
-            <span class="tag">#kitchen</span><span class="tag">#its-raw</span
-            ><span class="tag">#british</span>
-          </p>
-        </div>
-      </section>
-
-      <section class="question-box flex-col" data-js="bookmark3">
+      <section class="question-box flex-col">
         <p>Who is the best actor?</p>
-
-        <p class="answer">Jack Nicholson</p>
+        <button
+          aria-label="answer-button3"
+          type="button"
+          class="button"
+          data-js="answer-button3"
+        ></button>
+        <p data-js="answer-box3" class="answer hidden">Jack Nicholson</p>
 
         <div class="tags">
           <p>
@@ -52,32 +56,39 @@
             ><span class="tag">#joker</span>
           </p>
         </div>
+
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button3"
+        >
+          <img src="/images/bookmark-regular.svg" alt="bookmark-symbol" height="30" />
+        </button>
       </section>
 
-      <section class="question-box flex-col" data-js="bookmark4">
-        <p>Who is the best band?</p>
-
-        <p class="answer">Metallica</p>
-
-        <div class="tags">
-          <p>
-            <span class="tag">#marvel</span><span class="tag">#comic-book</span
-            ><span class="tag">#dark-knight</span>
-          </p>
-        </div>
-      </section>
-
-      <section class="question-box flex-col" data-js="bookmark5">
+      <section class="question-box flex-col">
         <p>Who is the best comedian?</p>
-
-        <p class="answer">George Carlin</p>
+        <button
+          aria-label="answer-button5"
+          type="button"
+          class="button"
+          data-js="answer-button5"
+        ></button>
+        <p data-js="answer-box5" class="answer hidden">George Carlin</p>
 
         <div class="tags">
-          <p>
-            <span class="tag">#marvel</span><span class="tag">#comic-book</span
-            ><span class="tag">#dark-knight</span>
-          </p>
+          <p><span class="tag">#music</span><span class="tag">#rock-band</span></p>
         </div>
+
+        <button
+          aria-label="bookmark-symbol"
+          type="button"
+          class="bookmark-symbol"
+          data-js="bookmark-button5"
+        >
+          <img src="/images/bookmark-regular.svg" alt="bookmark-symbol" height="30" />
+        </button>
       </section>
     </main>
 
@@ -96,6 +107,11 @@
                 src="images/bookmark-regular.svg"
                 alt="bookmark"
                 height="40"
+            /></a>
+          </li>
+          <li>
+            <a href="create-card.html"
+              ><img class="icons icon4" src="images/plus-sign-1.svg" alt="create-card"
             /></a>
           </li>
           <li>

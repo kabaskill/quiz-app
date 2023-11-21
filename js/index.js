@@ -1,14 +1,18 @@
-const answerButton1 = document.querySelector('[data-js="answer-button1"]');
-const answerButton2 = document.querySelector('[data-js="answer-button2"]');
-const answerButton3 = document.querySelector('[data-js="answer-button3"]');
-const answerButton4 = document.querySelector('[data-js="answer-button4"]');
-const answerButton5 = document.querySelector('[data-js="answer-button5"]');
+const buttons = [
+  document.querySelector('[data-js="answer-button1"]'),
+  document.querySelector('[data-js="answer-button2"]'),
+  document.querySelector('[data-js="answer-button3"]'),
+  document.querySelector('[data-js="answer-button4"]'),
+  document.querySelector('[data-js="answer-button5"]'),
+];
 
-const answerBox1 = document.querySelector('[data-js="answer-box1"]');
-const answerBox2 = document.querySelector('[data-js="answer-box2"]');
-const answerBox3 = document.querySelector('[data-js="answer-box3"]');
-const answerBox4 = document.querySelector('[data-js="answer-box4"]');
-const answerBox5 = document.querySelector('[data-js="answer-box5"]');
+const answers = [
+  document.querySelector('[data-js="answer-box1"]'),
+  document.querySelector('[data-js="answer-box2"]'),
+  document.querySelector('[data-js="answer-box3"]'),
+  document.querySelector('[data-js="answer-box4"]'),
+  document.querySelector('[data-js="answer-box5"]'),
+];
 
 const bookmarkButton1 = document.querySelector('[data-js="bookmark-button1"]');
 const bookmarkButton2 = document.querySelector('[data-js="bookmark-button2"]');
@@ -16,32 +20,27 @@ const bookmarkButton3 = document.querySelector('[data-js="bookmark-button3"]');
 const bookmarkButton4 = document.querySelector('[data-js="bookmark-button4"]');
 const bookmarkButton5 = document.querySelector('[data-js="bookmark-button5"]');
 
-const bookmarkBox1 = document.querySelector('[data-js="bookmark1"]');
-const bookmarkBox2 = document.querySelector('[data-js="bookmark2"]');
-const bookmarkBox3 = document.querySelector('[data-js="bookmark3"]');
-const bookmarkBox4 = document.querySelector('[data-js="bookmark4"]');
-const bookmarkBox5 = document.querySelector('[data-js="bookmark5"]');
+buttonText(buttons, "Show Answer");
 
-answerButton1.addEventListener("click", () => {
-  answerBox1.classList.toggle("hidden");
-  console.log(answerBox1.classList.value);
-});
+// FUNCTIONS
+function buttonText(arr, txt) {
+  i = 0;
+  for(let i =0; i<arr.length; i++){
+    buttons[i].value = txt;
+    buttons[i].addEventListener("click", () => {
+      answers[i].classList.toggle("hidden");
+      buttons[i].textContent = showHideToggle(i);
+    });
+  }
+}
 
-answerButton2.addEventListener("click", () => {
-  answerBox2.classList.toggle("hidden");
-});
+function showHideToggle(i) {
+  if (buttons[i].textContent === "Show Answer") {
+    return "Hide Answer";
+  }
+  return "Show Answer";
+}
 
-answerButton3.addEventListener("click", () => {
-  answerBox3.classList.toggle("hidden");
-});
-
-answerButton4.addEventListener("click", () => {
-  answerBox4.classList.toggle("hidden");
-});
-
-answerButton5.addEventListener("click", () => {
-  answerBox5.classList.toggle("hidden");
-});
 
 bookmarkButton1.addEventListener("click", () => {
   bookmarkButton1.classList.toggle("clicked");

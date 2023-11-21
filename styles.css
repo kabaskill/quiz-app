@@ -1,4 +1,4 @@
-@import "global.css";
+@import "/components/global.css";
 @import "/components/header.css";
 @import "/components/button.css";
 @import "/components/card.css";
@@ -47,10 +47,11 @@ section .profile-stats {
   font-size: 1.2rem;
 }
 
-.profile-stats-items {
+.profile-stats .items {
   background-color: rgb(236, 252, 253);
   padding-inline: 1rem;
-  padding-block: 0.6rem;
+  padding-top: 0.5rem;  
+  padding-bottom: 0.7rem;
 }
 
 .settings {

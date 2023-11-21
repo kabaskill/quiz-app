@@ -4,7 +4,7 @@ footer {
   height: 10vh;
   bottom: 0px;
 
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 footer nav {
@@ -36,5 +36,9 @@ footer nav li {
 }
 
 .icon3 {
+  width: 2.6rem;
+}
+
+.icon4 {
   width: 2.6rem;
 }
